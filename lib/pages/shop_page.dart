@@ -25,6 +25,7 @@ class _Shop_pageState extends State<Shop_page> {
               color: Colors.grey[200],
               borderRadius: BorderRadius.circular(12),
             ),
+
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -64,10 +65,11 @@ class _Shop_pageState extends State<Shop_page> {
           })
           ),
           Padding(
-            padding: EdgeInsets.only(top: 35),
+            padding: EdgeInsets.only(top: 200),
             child: Divider(
-              color: Colors.white,
-            ),)
+              color: Colors.grey[300],
+            ),),
+
         
         ],
       ),

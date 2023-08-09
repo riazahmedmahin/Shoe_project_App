@@ -13,13 +13,16 @@ class Shop_Tile extends StatelessWidget {
       width: 200,
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(12)
+        borderRadius: BorderRadius.only(topLeft: Radius.circular(25),
+        bottomRight: Radius.circular(25)
+        )
+          
       ),
       child: Column(
         children: [
           Image.asset(shoe.imagepath),
           Text(shoe.description),
-          SizedBox(height: 65,),
+          SizedBox(height: 77.5,),
           Padding(
             padding: const EdgeInsets.only(left: 25),
             child: Row(
@@ -40,7 +43,7 @@ class Shop_Tile extends StatelessWidget {
                color: Colors.black,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(12),
-                 bottomRight: Radius.circular(12),
+                 bottomRight: Radius.circular(20),
                 )
                 ),
                 child: Icon(Icons.add,color: Colors.white,)
