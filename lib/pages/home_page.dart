@@ -54,7 +54,11 @@ Cart_page()
           
           ListTile(
             leading: Icon(Icons.home,color: Colors.white,),
-            title: Text("home",style: TextStyle(color: Colors.white),),
+            title: Text("Home",style: TextStyle(color: Colors.white),),
+          ),
+          ListTile(
+            leading: Icon(Icons.person,color: Colors.white,),
+            title: Text("About",style: TextStyle(color: Colors.white),),
           )
         ],
       ),

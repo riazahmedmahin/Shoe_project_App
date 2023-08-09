@@ -35,7 +35,7 @@ backgroundColor: Colors.grey[300],
             textAlign: TextAlign.center,
             ),
              
-            SizedBox(height: 100,),
+            SizedBox(height: 200),
             GestureDetector(
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>Home_Page())),
               child: Container(
@@ -57,11 +57,11 @@ backgroundColor: Colors.grey[300],
                     ),
                   ]
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 150,vertical: 15),
+                padding: EdgeInsets.symmetric(horizontal: 130,vertical: 20),
                 child: Text("Shop Now",
                 style: TextStyle(color: Colors.black,
                 fontWeight: FontWeight.bold,
-                fontSize: 18),),
+                fontSize: 16),),
               ),
             )
         
