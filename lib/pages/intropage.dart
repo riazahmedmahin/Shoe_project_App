@@ -19,23 +19,23 @@ backgroundColor: Colors.grey[300],
           child: Column(
             
             children: [
-              SizedBox(height: 15,),
+              SizedBox(height: 55,),
               Padding(
                 padding: const EdgeInsets.all(25.0),
                 child: Image.asset("images/nike.png",height: 200,),
               ),
         
-            SizedBox(height: 20,),
+            SizedBox(height: 50,),
             Text("Just Do it",style: TextStyle(color: Colors.black,fontSize: 26,fontWeight: FontWeight.bold),),
         
-            SizedBox(height: 20,),
+            SizedBox(height: 40,),
             Text("Brand new sneakers and custom kicks made with premium quality",
             style: TextStyle(color: Colors.grey,fontSize: 16,
             fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
             ),
              
-            SizedBox(height: 200),
+            SizedBox(height: 100),
             GestureDetector(
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>Home_Page())),
               child: Container(

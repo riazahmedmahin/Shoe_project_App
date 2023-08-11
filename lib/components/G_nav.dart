@@ -43,7 +43,7 @@ class Nagivation_Button extends StatelessWidget {
         text: 'Search',
       ),
       GButton(
-        icon: Icons.info,
+        icon: Icons.person,
         text: 'Profile',
       )
       ]
