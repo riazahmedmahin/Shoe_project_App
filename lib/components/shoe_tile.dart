@@ -2,15 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:shoe_project/models/shop.dart';
 
 class Shop_Tile extends StatelessWidget {
+  void Function()? onTap;
   Shoe shoe;
-   Shop_Tile({super.key , required this.shoe});
+   Shop_Tile({super.key , required this.shoe, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin:  EdgeInsets.only(left: 12),
+      margin:  EdgeInsets.only(left: 20),
      
-      width: 200,
+      width: 220,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.only(topLeft: Radius.circular(25),
@@ -22,12 +23,12 @@ class Shop_Tile extends StatelessWidget {
         children: [
           Image.asset(shoe.imagepath),
           Text(shoe.description),
-          SizedBox(height: 77.5,),
+          SizedBox(height: 73.8,),
           Padding(
-            padding: const EdgeInsets.only(left: 25),
+            padding: const EdgeInsets.only(left: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
               Column(
                 children: [
@@ -37,17 +38,20 @@ class Shop_Tile extends StatelessWidget {
                 ],
               ),
             
-              Container(
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
-               color: Colors.black,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(12),
-                 bottomRight: Radius.circular(20),
-                )
-                ),
-                child: Icon(Icons.add,color: Colors.white,)
-                )
+              GestureDetector(
+                onTap: onTap ,
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                 color: Colors.black,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(12),
+                   bottomRight: Radius.circular(20),
+                  )
+                  ),
+                  child: Icon(Icons.add,color: Colors.white,)
+                  ),
+              )
             
             ],),
           )

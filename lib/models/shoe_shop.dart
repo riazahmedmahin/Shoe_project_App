@@ -11,7 +11,7 @@ class Cart extends ChangeNotifier  {
     Shoe(
       name: 'Nike',
       price: '200',
-      imagepath: 'images/shoe1.png', 
+      imagepath: 'images/shoes_1.png',
       description: 'A good product ',
           
     ),
@@ -19,7 +19,7 @@ class Cart extends ChangeNotifier  {
      Shoe(
       name: 'Nike sports',
       price: '320',
-      imagepath: 'images/shoe2.png',
+      imagepath: 'images/shoes_2.png',
        description: 'A good product '
          
     ),
@@ -29,7 +29,7 @@ class Cart extends ChangeNotifier  {
      Shoe(
       name: 'Nike ',
       price: "320",
-      imagepath: 'images/shoe3.png', 
+      imagepath: 'images/shoe2.png',
       description: 'A good product '
          
     ),
@@ -53,14 +53,18 @@ class Cart extends ChangeNotifier  {
      Shoe(
       name: 'Nike',
       price: '280',
-      imagepath: 'images/shoes_3.png', 
+      imagepath: 'images/img_shoes.png',
       description: 'A good product '
          
     ),
-  
+    Shoe(
+        name: 'Nike',
+        price: '280',
+        imagepath: 'images/img_shoes.png',
+        description: 'A good product '
 
-  
-  
+    ),
+
   ];
 
 
